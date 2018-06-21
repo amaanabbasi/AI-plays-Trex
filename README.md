@@ -1,5 +1,4 @@
-# AI-plays-Trex
-## Windows users-only
+# AI-plays-Trex (windows)
 ## Overview
 what this does is that it takes screenshots of the trex game and passess them through a CNN which output three values.
 * 0 --> do nothing
