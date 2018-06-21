@@ -5,8 +5,16 @@ what this does is that it takes screenshots of the trex game and passess them th
 * 0 --> do nothing
 * 1 --> jump
 * 2 --> duck
-The value with the greatest probability is used for the action, trex has to perform.
 
+The value with the greatest probability is used for the action, trex has to perform.
+## How to run
+`python playgame.py`
+## Note:
+If it didn't work
+*  try Adjusting the coordinates of the screenshot.
+*  if it still don't work , capture the dataset and then train it.
+
+## Please help me improve documentation
 
 * for windows users
 
