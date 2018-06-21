@@ -17,4 +17,4 @@ If it didn't work
 ## Please help me improve documentation
 
 # Credits
-[https://github.com/jg-fisher]
+[John Fisher](https://github.com/jg-fisher)
