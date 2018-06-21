@@ -23,7 +23,7 @@ def predict(game_element):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.Canny(img, threshold1=100, threshold2=200)
     img =cv2.resize(img, (0,0), fx=0.5, fy=0.5)
-    img = img[np.newaxis, :,:, np.newaxis]
+    img = img[None, :,:, None]
     img = np.array(img)
 
     y_prob = model.predict(img)
@@ -31,8 +31,8 @@ def predict(game_element):
     prediction = y_prob.argmax(axis=-1)
     if prediction == 1:
         print('JUMP')
-        game_element.send_keys(u'\ue013')
         time.sleep(0.07)
+        game_element.send_keys(u'\ue013')
     if prediction == 0:
         print("DO nothing")
         pass
