@@ -16,4 +16,5 @@ If it didn't work
 
 ## Please help me improve documentation
 
-# Credits :John Fisher
+# Credits
+[https://github.com/jg-fisher]
