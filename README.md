@@ -1,5 +1,5 @@
 # AI-plays-Trex
-
+## Windows users-only
 ## Overview
 what this does is that it takes screenshots of the trex game and passess them through a CNN which output three values.
 * 0 --> do nothing
@@ -15,7 +15,5 @@ If it didn't work
 *  if it still don't work , capture the dataset and then train it.
 
 ## Please help me improve documentation
-
-* for windows users
 
 # Credits :John Fisher
