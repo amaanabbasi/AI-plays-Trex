@@ -32,18 +32,19 @@ def start():
 
 			if keyboard.is_pressed('up arrow'):
 				csv.write('1\n')
-				cv2.imwrite('images\\frame_{0}.jpg'.format(x), img)
+				cv2.imwrite(os.path.join('images','frame_{0}.jpg'.format(x)), img)
+				# cv2.imwrite('images\\frame_{0}.jpg'.format(x), img)
 				print('jump write')
 				x += 1
 
 			if keyboard.is_pressed('down arrow'):
-				cv2.imwrite('images\\frame_{0}.jpg'.format(x), img)
+				cv2.imwrite(os.path.join('images','frame_{0}.jpg'.format(x)), img)
 				csv.write('2\n')
 				print('duck')
 				x += 1
 
 			if keyboard.is_pressed('t'):
-				cv2.imwrite('images\\frame_{0}.jpg'.format(x), img)
+				cv2.imwrite(os.path.join('images','frame_{0}.jpg'.format(x)), img)
 				csv.write('0\n')
 				print('nothing')
 				x += 1

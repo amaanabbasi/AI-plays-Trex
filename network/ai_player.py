@@ -4,8 +4,8 @@ from mss import mss
 import cv2
 import numpy as np 
 import time
-
-model = load_model('network\\dino_ai_weights_post_train.h5')
+import os
+model = load_model(os.path.join('network','dino_ai_weights_post_train.h5'))
 start = time.time()
 
 def predict(game_element):
